@@ -53,7 +53,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             ?: return;
         if(editTextValue == 0.0)
             return;
-        val res = ((PI * editTextValue.pow(2.0))*10).roundToInt() / 10.0
+        var res: Double = 0.0
+        when(currentItem) {
+            "Circle" -> {
+                val res = ((PI * editTextValue.pow(2.0))*10).roundToInt() / 10.0
+            }
+            "Square" -> {
+                res = ((editTextValue.pow(2.0))*10).roundToInt() / 10.0
+            }
+            else -> {
+                return
+            }
+        }
 
         findViewById<TextView>(R.id.result).text = res.toString()
     }
