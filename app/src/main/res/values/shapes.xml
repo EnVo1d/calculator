@@ -3,5 +3,6 @@
     <string-array name="shapes_array">
         <item>Circle</item>
         <item>Square</item>
+        <item>Rectangle</item>
     </string-array>
 </resources>
