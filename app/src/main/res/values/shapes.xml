@@ -4,5 +4,6 @@
         <item>Circle</item>
         <item>Square</item>
         <item>Rectangle</item>
+        <item>Triangle</item>
     </string-array>
 </resources>
